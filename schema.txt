@@ -1,0 +1,26 @@
+User
+name CHAR(64)
+national_code UNIQUE CHAR(64)
+password CHAR(64)
+phone UNIQUE CHAR(11)
+email UNIQUE CHAR(100)
+joined_at TIMESTAMP
+
+Bank_acc
+acc UNIQUE INTEGER
+balance INTEGER
+owner_nc CHAR(64)
+password CHAR(64)
+alias CHAR(64)
+
+Fav_acc
+owner_nc CHAR(64)
+acc INTEGER 
+alias CHAR(64)
+
+Transaction
+sender INTEGER
+reciever INTEGER
+money INTEGER
+balance INTEGER
+time TIMESTAMP
